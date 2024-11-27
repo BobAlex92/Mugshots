@@ -1,0 +1,134 @@
+/* Basic styling and background */
+body {
+    font-family: 'PT Serif', serif;
+    background: url('../img/puzzle-bg.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #3e2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+    z-index: -1;
+}
+
+.logo {
+    width: 150px;
+    margin: 0 auto 1.5rem; /* Center the logo with some spacing below */
+    display: block;
+}
+/* Puzzle container styling */
+.puzzle-container {
+    text-align: center;
+    max-width: 500px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 2px solid #d18a50;
+    backdrop-filter: blur(5px);
+}
+/* Title styling */
+.puzzle-container h1 {
+    font-size: 2.2rem;
+    color: #a76c40;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+/* Encrypted text styling */
+.puzzle-box {
+    margin: 1.5rem 0;
+}
+
+.encrypted-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #a76c40;
+    margin-bottom: 1rem;
+}
+
+/* Hint styling */
+/* Input field styling */
+#shift-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #d18a50;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#shift-input:focus {
+    border-color: #a76c40;
+}
+
+/* Button styling */
+#decrypt-button {
+    padding: 0.7rem 1.5rem;
+    background-color: #d18a50;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#decrypt-button:hover {
+    background-color: #a76c40;
+}
+
+/* Response and success message styling */
+#decoded-message, #success-message, #lockout-message {
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    color: #d18a50;
+    font-weight: bold;
+}
+
+#success-message {
+    color: green;
+}
+
+#lockout-message {
+    color: red;
+}
+
+/* Add a subtle animation for the success and lockout messages */
+#success-message, #lockout-message {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* "Go Back" button styling */
+.go-back-button {
+    margin-top: 2rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #a76c40;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.go-back-button:hover {
+    background-color: #d18a50;
+}

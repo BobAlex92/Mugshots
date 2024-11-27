@@ -1,0 +1,474 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Crimson Text', serif;
+}
+
+.accent-font {
+  font-family: 'Special Elite', monospace; /* For specific sections */
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3e2f2f;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: 'Georgia', serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('../img/mugshots-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+/* Hero Overlay Styling */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 1;
+}
+
+/* Hero Content Adjustments */
+.hero-content {
+    position: relative;
+    z-index: 2; /* Make sure content is above the overlay */
+}
+.hero-content h1 i {
+    color: #e0a960; /* Accent color for icons */
+    font-size: 2.5rem;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+/* Hero Logo Styling */
+.hero-logo {
+    width: 250px; /* Adjust size as needed */
+    margin-bottom: 1rem; /* Space between logo and headline */
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3)); /* Adds subtle shadow for emphasis */
+    max-width: 100%; /* Ensures it remains responsive */
+}
+
+
+.cta-button {
+    background-color: #e0a960;
+    padding: 0.75rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #d18a50;
+}
+
+/* Our Story Section Styling */
+.our-story {
+    background-color: #f4e1c1; /* Light parchment color */
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Georgia', serif; /* Classic serif font for old-time feel */
+}
+
+.story-container {
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #f9f2e7;
+    border: 1px solid #d3b894;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a3b2f; /* Dark brown for vintage text color */
+}
+
+/* Old-timey heading style */
+.story-container h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #4a3b2f;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* "Parchment" texture effect */
+.story-container::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.story-container p {
+    font-style: italic;
+    font-weight: 400;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+}
+/* Icon Styling in Text */
+.story-container p i {
+    color: #4a3b2f; /* Match text color */
+    font-size: 1rem;
+    margin: 0 0.25rem; /* Small spacing around icons */
+    vertical-align: middle; /* Aligns icons with text */
+}
+
+.learn-more {
+    text-decoration: none;
+    color: #e0a960;
+    font-weight: bold;
+}
+
+/* Featured Menu Section */
+.featured-menu {
+    background-color: #e9e5da;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+
+/* Events Section Styling */
+.events {
+    padding: 3rem 2rem;
+    background-color: #f4e1c1;
+    text-align: center;
+}
+
+.events h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 2.5rem;
+    color: #3e2f2f;
+    margin-bottom: 2rem;
+}
+
+.event-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.event-card {
+    /* Other styles as needed */
+    width: 45%; /* Or whatever the current width is */
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #3e2f2f;
+    text-align: center;
+}
+
+.event-card h3 {
+    font-size: 1.8rem;
+    color: #3e2f2f;
+    margin-bottom: 1rem;
+}
+
+.event-card p {
+    font-size: 1rem;
+    color: #4a3b2f;
+    margin-bottom: 1.5rem;
+}
+
+.event-btn {
+    background-color: #e0a960;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.event-btn:hover {
+    background-color: #d18a50;
+}
+/* Loyalty Program Section Styling */
+.loyalty-program {
+    padding: 4rem 2rem;
+    background-color: #3e2f2f;
+    text-align: center;
+    color: #fff;
+}
+
+.loyalty-program h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.loyalty-program p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Testimonials Section Styling */
+.testimonials {
+    padding: 3rem 2rem;
+    background-color: #e9e5da;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 2.5rem;
+    color: #3e2f2f;
+    margin-bottom: 2rem;
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Larger min-width for desktop */
+    gap: 1.5rem; /* Gap between cards */
+    justify-items: center;
+}
+.menu-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    width: 100%; /* Full width within grid */
+    max-width: 320px; /* Control max-width for larger cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px; /* Larger height for bigger images */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+.menu-item p.details {
+    font-size: 0.9rem;
+    color: #6c5e5e;
+    margin-top: 0.5rem;
+    font-style: italic;
+    line-height: 1.4;
+}
+/* Button Styling for Featured Menu Section */
+.menu-button {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1.25rem;
+    background-color: #d18a50;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #a76c40;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-button:hover {
+    background-color: #a76c40;
+    color: #fff;
+    border-color: #8a5835;
+}
+
+
+blockquote {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    font-style: italic;
+    color: #4a3b2f;
+}
+
+blockquote p {
+    margin-bottom: 0.5rem;
+}
+
+blockquote cite {
+    font-weight: bold;
+    color: #3e2f2f;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #3e2f2f;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.footer-links a {
+    color: #e0a960;
+    text-decoration: none;
+}
+
+.footer-social a {
+    color: #e0a960;
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3e2f2f;
+        width: 100%;
+        padding: 1rem 0;
+        z-index: 10;
+    }
+
+    .nav-links.nav-active {
+        display: flex; /* Show nav-links when toggled */
+    }
+
+    .hamburger-menu {
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    .nav-links a {
+        padding: 0.75rem 1.5rem;
+        text-align: center;
+        display: block;
+    }
+
+    .social-links {
+        display: none; /* Hide social links in the main navbar */
+    }
+       .events-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-card {
+        width: 90%; /* Full width on smaller screens */
+        margin: 0.5rem 0;
+    }
+
+    .event-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .event-card p {
+        font-size: 1rem;
+    }
+
+    .event-card button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Desktop view settings */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none;
+    }
+}

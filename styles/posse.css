@@ -1,0 +1,207 @@
+/* Basic styling and themed background for the Posse page */
+body {
+    font-family: 'Crimson Text', serif;
+    background-image: url('../img/mugshots-menu-bg.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #3e2f2f;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main section styling with box shadow and subtle scale animation */
+.posse-program {
+    max-width: 800px;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s;
+    margin-top: 100px;
+}
+
+.posse-program:hover {
+    transform: scale(1.02);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header styling with icon */
+.posse-program h1 {
+    font-size: 2.5rem;
+    color: #d18a50;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+}
+
+.posse-program h1::before {
+    content: "🤠"; /* Cowboy hat face emoji as an icon */
+    position: absolute;
+    left: -40px;
+    font-size: 2.5rem;
+}
+
+/* Section headers */
+.posse-program h2 {
+    font-size: 1.8rem;
+    color: #4a3b2f;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+
+/* Text styling */
+.posse-program p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #3e2f2f;
+    margin: 0.5rem 0 1rem;
+    transition: color 0.3s;
+}
+
+/* Perks list with icons */
+.perks-list {
+    list-style: none;
+    padding: 0;
+}
+
+.perks-list li {
+    margin: 0.75rem 0;
+    font-size: 1rem;
+    color: #593c2b;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.perks-list li::before {
+    content: "💰"; /* Money bag emoji as an icon for perks */
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* Events section with icon and animation */
+.events {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.event h3 {
+    font-size: 1.5rem;
+    color: #d18a50;
+    margin: 1rem 0 0.5rem;
+    position: relative;
+}
+
+.event h3::before {
+    content: "🎤"; /* Microphone emoji for event headers */
+    position: absolute;
+    left: -30px;
+    font-size: 1.2rem;
+}
+
+.event p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #3e2f2f;
+    padding-left: 30px;
+    transition: color 0.3s;
+}
+
+/* Button and bold elements for emphasis */
+strong {
+    color: #d18a50;
+}
+
+/* Hover effects */
+.perks-list li:hover, .event p:hover {
+    color: #d18a50;
+}
+/* Social Media Icon Styling */
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.social-media p {
+    margin: 0;
+    padding-right: 0.5rem;
+    font-weight: bold;
+    color: #3e2f2f;
+}
+
+.social-media a {
+    color: #d18a50;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #4a3b2f;
+}
+/* Reward Images Styling */
+/* Basic styling for reward section layout */
+.rewards-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.reward-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #d18a50;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.reward-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Flex styling for text and image */
+.reward-text {
+    flex: 1;
+    padding-right: 1.5rem;
+    color: #4a3b2f;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.reward-text p {
+    display: flex;
+    align-items: center;
+}
+
+.reward-text .icon {
+    font-size: 1.5rem;
+    color: #d18a50;
+    margin-right: 0.5rem;
+}
+
+/* Reward image styling with uniform size and shadow */
+.reward-image {
+    max-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

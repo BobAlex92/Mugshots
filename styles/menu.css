@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('../img/mugshots-menu-bg.webp'); /* Adjust path if needed */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Disclaimer Section Styling */
+.disclaimer {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-top: 2px solid #d18a50;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #4a3b2f;
+    font-family: 'PT Serif', serif;
+    line-height: 1.6;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.disclaimer p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.disclaimer strong {
+    color: #d18a50;
+    font-weight: bold;
+}
+/* General Menu Section Styling */
+
+.menu {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-top:50px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    max-width: 320px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.menu h1 {
+    font-size: 2.5rem;
+    color: #3e2f2f;
+    margin-bottom: 1.5rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.menu-section h2 {
+    font-size: 2.8rem;
+    color: #4a3b2f;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Menu Items Grid */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Larger min-width for desktop */
+    gap: 1.5rem; /* Gap between cards */
+    justify-items: center;
+}
+
+/* Menu Item Card */
+.menu-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    width: 100%; /* Full width within grid */
+    max-width: 320px; /* Control max-width for larger cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px; /* Larger height for bigger images */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item h3 {
+    font-size: 1.4rem; /* Slightly larger for emphasis */
+    color: #3e2f2f;
+    margin-bottom: 0.3rem;
+}
+
+.menu-item .price {
+    font-size: 1rem;
+    color: #d18a50;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.details-btn {
+    background-color: #e0a960;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #c28a50;
+}
+
+.details-btn:hover {
+    background-color: #c28a50;
+}
+
+/* Modal Styling */
+/* Enhanced Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal-image {
+    margin-bottom: 1rem;
+}
+
+.modal-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.modal-content h3 {
+    color: #3e2f2f;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+#modal-price, #modal-calories {
+    color: #d18a50;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#modal-description {
+    font-size: 1rem;
+    color: #4a3b2f;
+    line-height: 1.5;
+}
+
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 1024px) {
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+      .menu-items {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row on mobile */
+    }
+
+    .menu-item {
+        width: 100%; /* Full width of container on mobile */
+        max-width: none; /* Remove max-width constraint */
+    }
+}

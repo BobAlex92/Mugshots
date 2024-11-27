@@ -1,0 +1,88 @@
+/* Event Page Background */
+body {
+    background-image: url('../img/mugshots-bg2.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff; /* Ensure readability on the dark background */
+}
+/* Go Back Button Styling */
+.back-button-container {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.back-button {
+    background-color: #e0a960;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #d18a50;
+}
+/* Event Schedule Section Styling */
+.event-schedule {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+    color: #f9f2e7;
+}
+
+.event-schedule h1 {
+    font-size: 2.5rem;
+    color: #e0a960;
+    margin-bottom: 2rem;
+}
+
+/* Event Cards Section */
+.event-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.event-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    color: #3e2f2f;
+}
+
+.event-card h2 {
+    font-size: 1.8rem;
+    color: #3e2f2f;
+    margin-bottom: 1rem;
+}
+
+.event-card p {
+    font-size: 1rem;
+    color: #4a3b2f;
+    margin-bottom: 1rem;
+}
+
+.signup-button {
+    background-color: #e0a960;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #d18a50;
+}

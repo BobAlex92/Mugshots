@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mugshots Coffeehouse</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">Mugshots Coffeehouse</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events/event-list.html">Events</a></li>
+        <li><a href="posse.html">The Posse</a></li>
+    </ul>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
+        <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+        <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+    </div>
+    <!-- Hamburger icon for mobile -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+ <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <img src="img/mugshots-logo.png" alt="Mugshots Coffeehouse Logo" class="hero-logo">
+        <h1><i class="fas fa-mug-hot"></i>Come for the coffee,<i class="fas fa-search"></i> stay for the escape</h1>
+        <a href="#menu" class="cta-button">Explore the Menu</a>
+    </div>
+</section>
+
+  <!-- Our Story Section -->
+<section class="our-story" id="our-story">
+    <div class="story-container">
+        <h2>Our Story</h2>
+        <p>
+            In a town that was once known for its legendary old jailhouse, <strong>Mugshots Coffeehouse</strong> has become a quirky hotspot for anyone looking to <strong>“do hard time”</strong> with a great cup of coffee. Owned by a <strong>history buff</strong> with a passion for the <em>Wild West</em>, the café is designed to give visitors a taste of the frontier days—complete with <em>rustic wood furnishings</em>, a vintage saloon bar for ordering <i class="fas fa-mug-hot"></i>, and walls lined with “wanted posters” of famous <em>outlaws</em>, <strong>sheriffs</strong>, and <em>vigilantes</em> <i class="fas fa-hat-cowboy"></i> (and a few familiar faces from around town).
+        </p>
+    </div>
+</section>
+
+
+    <!-- Featured Menu Section -->
+<section class="featured-menu" id="menu">
+    <h2>Featured Menu</h2>
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="img/MenuItems/Espresso&Coffee/the-outlaw.webp" alt="The Outlaw">
+            <h3>The Outlaw</h3>
+            <p>A smoky espresso blend brewed for rebels.</p>
+            <p class="details">Our boldest espresso, rich with smoky undertones and perfect for anyone who craves adventure in every sip.</p>
+            <a href="menu.html" class="menu-button">View Full Menu</a>
+
+        </div>
+        <div class="menu-item">
+            <img src="img/MenuItems/Espresso&Coffee/sheriffs-special.webp" alt="The Sheriff's Special">
+            <h3>The Sheriff’s Special</h3>
+            <p>Classic black coffee, strong enough to keep the town safe.</p>
+            <p class="details">Brewed from our finest beans, this no-nonsense coffee is robust, flavorful, and designed to wake up even the weariest sheriff.</p>
+            <a href="menu.html" class="menu-button">View Full Menu</a>
+
+        </div>
+        <div class="menu-item">
+            <img src="img/MenuItems/Lattes/the-bounty.webp" alt="The Bounty">
+            <h3>The Bounty</h3>
+            <p>Caramel latte with cinnamon, fit for any bounty hunter.</p>
+            <p class="details">Sweet and indulgent, The Bounty combines caramel and cinnamon to create a satisfying treat that’s rich and rewarding.</p>
+            <a href="menu.html" class="menu-button">View Full Menu</a>
+        </div>
+        <div class="menu-item">
+            <img src="img/MenuItems/Lattes/midnight-rider.webp" alt="Midnight Rider">
+            <h3>Midnight Rider</h3>
+            <p>Mocha latte with chocolate, perfect for late nights.</p>
+            <p class="details">A mocha blend for those long nights, with a touch of vanilla and deep chocolate flavor to satisfy any night owl.</p>
+            <a href="menu.html" class="menu-button">View Full Menu</a>
+        </div>
+    </div>
+</section>
+
+      <!-- Events Section -->
+    <section class="events" id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-cards">
+            <div class="event-card">
+                <h3><i class="fas fa-microphone-alt"></i>Wanted: Open Mic Night</h3>
+                <p>Join us every month for a night of music, poetry, and storytelling. Share your tale or cheer for others!</p>
+                <a href="events/event-list.html">
+                <button class="event-btn">See Schedule</button>
+            </a>
+            </div>
+            <div class="event-card">
+                <h3><i class="fas fa-key"></i> Hold-Up Day</h3>
+                <p>Every Saturday, give the “password of the week” at the door to score a free coffee or pastry!</p>
+                <a href="events/password-puzzle.html">
+                <button class="event-btn">Learn The Password</button>
+            </a>
+            </div>
+        </div>
+    </section>
+    <!-- Loyalty Program Section -->
+    <section class="loyalty-program" id="posse">
+        <h2>Join The Posse</h2>
+        <p>Become part of our loyalty program! Earn your own “wanted poster” and a special nickname on our wall.</p>
+        <a href="posse.html">
+        <button class="cta-button">Join The Posse</button>
+    </a>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-grid">
+            <blockquote>
+                <p>“Mugshots Coffeehouse is hands-down my favorite place to start my day!”</p>
+                <cite>– The Midnight Marauder</cite>
+            </blockquote>
+            <blockquote>
+                <p>“I come for the coffee, but stay for the amazing events and atmosphere!”</p>
+                <cite>– The Cold Brew Bandit</cite>
+            </blockquote>
+            <blockquote>
+                <p>“The sheriff’s special is my go-to coffee. Strong, bold, and perfect.”</p>
+                <cite>– The Lone Ranger</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Mugshots Coffeehouse</div>
+            <p>Wanted: Coffee Lovers</p>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#posse">The Posse</a></li>
+            </ul>
+            <p>123 Wild West Street, Townsville | (555) 123-4567 | contact@mugshotscoffee.com</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
+                <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+                <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+            </div>
+        </div>
+    </footer>
+<script>
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('nav-active');
+    }
+</script>
+
+</body>
+</html>

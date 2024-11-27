@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Mugshots Coffeehouse</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/events.css">
+
+
+</head>
+<body>
+<div class="back-button-container">
+    <button onclick="goBack()" class="back-button">Go Back</button>
+</div>
+    <section class="event-schedule">
+        <h1>Upcoming Events at Mugshots Coffeehouse</h1>
+
+        <!-- Event Cards Section -->
+        <div class="event-cards">
+            <div class="event-card">
+                <h2>Open Mic Night - October 5</h2>
+                <p>Join us for a night of storytelling, music, and poetry! Starts at 7 PM.</p>
+                <button class="signup-button">Sign Up to Perform</button>
+            </div>
+            <div class="event-card">
+                <h2>Western Trivia Night - October 12</h2>
+                <p>Test your knowledge of the Wild West with a trivia night like no other. Prizes for top performers!</p>
+                <button class="signup-button">Join the Fun</button>
+            </div>
+            <div class="event-card">
+                <h2>Hold-Up Day - October 19</h2>
+                <p>Every Saturday, give the “password of the week” at the door for a chance to win a free coffee or pastry!</p>
+                <a href="password-puzzle.html">
+                <button class="signup-button">Learn the Password</button>
+            </a>
+            </div>
+            <div class="event-card">
+                <h2>Frontier Film Screening - October 26</h2>
+                <p>Enjoy a classic Western film with coffee in hand! Starts at 8 PM.</p>
+                <button class="signup-button">Reserve a Seat</button>
+            </div>
+            <!-- Add more event cards as needed -->
+        </div>
+    </section>
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Mugshots Coffeehouse</div>
+            <p>Wanted: Coffee Lovers</p>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#posse">The Posse</a></li>
+            </ul>
+            <p>123 Wild West Street, Townsville | (555) 123-4567 | contact@mugshotscoffee.com</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
+                <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+                <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+            </div>
+        </div>
+    </footer>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</body>
+</html>

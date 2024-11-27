@@ -1,0 +1,249 @@
+/* General page styling */
+body {
+    font-family: 'PT Serif', serif;
+    background: url('../img/mugshots-bg3.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #3e2f2f;
+}
+
+.about-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top:100px;
+}
+
+/* Intro Header Styling */
+.about-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(255, 248, 225, 0.9); /* Light background to make it stand out */
+    border: 1px solid #d18a50;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Icon and Text */
+.about-header h1 {
+    font-size: 2.5rem;
+    color: #a76c40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.about-header h1 i {
+    color: #d18a50; /* Icon color to match theme */
+    font-size: 2.5rem;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #3e2f2f;
+    max-width: 700px;
+    margin: 1rem auto 0;
+    line-height: 1.6;
+}
+
+/* Fun Facts */
+.fun-facts {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.fact {
+    background-color: #fff8e1;
+    padding: 1rem;
+    border: 1px solid #d18a50;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Timeline */
+.timeline-container {
+    margin-top: 2rem;
+}
+
+.timeline {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.timeline-item {
+    min-width: 250px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Team Container Styling */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust to make cards flexible */
+    gap: 2rem;
+    justify-items: center; /* Center items horizontally */
+    padding: 1rem;
+}
+
+/* Individual Team Member Card Styling */
+.team-member {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    display: inline-flex;
+    margin: 0 auto;
+}
+.team-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem; /* Adjusts spacing between heading and grid */
+    color: #3e2f2f; /* Matches theme color */
+}
+/* Flip Effect Styling */
+.poster-front, .poster-back {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #d18a50;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+}
+
+
+/* Flip Effect Hover */
+.poster-front {
+    transform: rotateY(0);
+}
+
+.poster-back {
+    transform: rotateY(180deg);
+}
+/* Styling for Poster Back */
+.poster-back {
+    background-color: #fdf1e3; /* Light cream background to fit theme */
+    color: #3e2f2f; /* Darker text color for readability */
+    border: 1px solid #d18a50; /* Matches front styling */
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Style on Poster Back */
+.poster-back h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #a76c40;
+}
+
+/* Text Styling on Poster Back */
+.poster-back p {
+    font-size: 1rem;
+    margin: 0.3rem 0;
+    line-height: 1.4;
+}
+
+/* Bold Labels for Key Information */
+.poster-back p strong {
+    color: #a76c40;
+    font-weight: bold;
+}
+
+/* Extra Spacing for Additional Information */
+.poster-back p:last-child {
+    margin-top: 0.5rem;
+}
+
+
+.team-member:hover .poster-front {
+    transform: rotateY(-180deg);
+}
+
+.team-member:hover .poster-back {
+    transform: rotateY(0);
+}
+
+/* Styling for the images inside the posters */
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/* Styling for the images inside the posters */
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+/* Code of Conduct */
+.code-of-conduct {
+    margin-top: 3rem;
+    background-color: #fff8e1;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #d18a50;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.code-of-conduct h2 {
+    text-align: center;
+    color: #a76c40;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.code-of-conduct ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.code-of-conduct li {
+    padding: 0.5rem 0;
+    font-weight: bold;
+    color: #3e2f2f;
+}
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .team-member {
+        width: 90%; /* Full width for mobile screens, keeping some padding */
+        margin: 1rem auto; /* Center each poster and add vertical spacing */
+    }
+}
