@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1; /* Ensure this is behind the content */
 }
 .story-container {
-    max-width: 800px;
+    max-width: 900px;
     padding: 2rem;
     background-color: #f9f2e7;
     border: 1px solid #d3b894;
