@@ -126,15 +126,30 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Our Story Section Styling */
 .our-story {
-    background-color: #f4e1c1; /* Light parchment color */
+    background-image: url('../img/wood-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 3rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-family: 'Georgia', serif; /* Classic serif font for old-time feel */
+    position: relative;
+    z-index: 1;
 }
-
+.our-story::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay (50% opacity) */
+    backdrop-filter: blur(2px); /* Adds blur effect */
+    z-index: -1; /* Ensure this is behind the content */
+}
 .story-container {
     max-width: 800px;
     padding: 2rem;

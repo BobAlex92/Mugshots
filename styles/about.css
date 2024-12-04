@@ -18,23 +18,33 @@ body {
 
 /* Intro Header Styling */
 .about-header {
+    position: relative;
     text-align: center;
     margin-bottom: 2rem;
-    padding: 1rem;
-    background-color: rgba(255, 248, 225, 0.9); /* Light background to make it stand out */
-    border: 1px solid #d18a50;
-    border-radius: 12px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    background: linear-gradient(120deg, rgba(255, 248, 225, 0.9), rgba(250, 240, 200, 0.8));
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.about-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/ornament.png') center/contain no-repeat;
+    opacity: 0.1;
+    z-index: 0;
 }
 
 /* Header Icon and Text */
+
 .about-header h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #a76c40;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+    z-index: 1;
+    position: relative;
 }
 
 .about-header h1 i {
@@ -45,28 +55,37 @@ body {
 .about-header p {
     font-size: 1.2rem;
     color: #3e2f2f;
-    max-width: 700px;
     margin: 1rem auto 0;
+    max-width: 800px;
     line-height: 1.6;
+    z-index: 1;
+    position: relative;
 }
 
 /* Fun Facts */
 .fun-facts {
     display: flex;
+    flex-wrap: wrap; /* Allow flexibility for smaller screens */
     gap: 1rem;
-    justify-content: center;
+    justify-content: space-around; /* Align items more dynamically */
     margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(255, 248, 225, 0.8); /* Soft background */
+    border-radius: 12px; /* Align with overall design language */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Slight shadow */
 }
 
 .fact {
-    background-color: #fff8e1;
-    padding: 1rem;
-    border: 1px solid #d18a50;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
+    flex: 1 1 200px; /* Ensure adaptability for screen sizes */
     text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, #f9e4c8, #ffe3aa);
+    border-radius: 10px;
+    border: 1px solid #d18a50;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
 
 /* Timeline */
 .timeline-container {
@@ -245,5 +264,11 @@ body {
     .team-member {
         width: 90%; /* Full width for mobile screens, keeping some padding */
         margin: 1rem auto; /* Center each poster and add vertical spacing */
+    }
+    .fun-facts{
+        display: block; 
+    }
+    .fact{
+        margin-bottom: 10px;
     }
 }
